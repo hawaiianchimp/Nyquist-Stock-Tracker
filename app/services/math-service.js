@@ -1,8 +1,17 @@
 import Ember from 'ember';
 
 export default Ember.Service.extend({
+	inputService: Ember.inject.service(),
+
+	/**
+	 * Calculates the moving average of an array of values
+	 *
+	 * @param  {Integer} limit [The number of days to calculate the moving average]
+	 * @param  {Array} data  [The array of values]
+	 * @return {[type]}       [description]
+	 */
 	movingAverage(limit, data) {
-		let values = this.convertToArray(data);
+		let values = this.get('inputService').convertToArray(data);
 		let total = 0;
 		let days = parseFloat(limit);
 		let sma = 0;
@@ -21,36 +30,15 @@ export default Ember.Service.extend({
 		return this.roundToNearest(4, sma);
 	},
 
-	roundToNearest(decimal, number) {
-		var tens = Math.pow(10, decimal);
-		return Math.round(number * tens) / tens;
-	},
-
 	/**
-	* This function returns an array from text passed into it
-	* Used for inputs that should be arrays
-	* @param {String} [text] [comma separated text that will be an array]
-	*/
-	convertToArray(text){
-		if(Ember.isEmpty(text)){
-			return [];
-		}
-		if(Ember.isArray(text)){
-			return text;
-		}
-		if(typeof text === 'string'){
-			if(text.indexOf(',') > -1){
-				return text.split(',').map(i => parseFloat(i))
-				.filter(this.isNumber);
-			}
-			else if(typeof parseFloat(text) === 'number'){
-				return (isNaN(parseFloat(text))) ? []:[parseFloat(text)];
-			}
-		}
-		if(typeof text === 'number'){
-			return [text];
-		}
-		return [];
+	 *
+	 * @param  {[type]} decimal [description]
+	 * @param  {[type]} number  [description]
+	 * @return {[type]}         [description]
+	 */
+	roundToNearest(decimal, number) {
+		let tens = Math.pow(10, decimal);
+		return Math.round(number * tens) / tens;
 	},
 
 	/**
@@ -58,5 +46,5 @@ export default Ember.Service.extend({
 	*/
 	isNumber(i){
 		return !isNaN(i) && typeof i === "number";
-	},
+	}
 });
