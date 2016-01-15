@@ -51,3 +51,9 @@ Specify what it takes to deploy your app.
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
 
+## Jason Kelly
+
+For SMA, usually 50-day and 200-day work well.
+For MACD, the default and perfectly fine parameters to use
+are 12-, 26-, and 9-unit time periods (day, weeks, months, quarters).
+For RSI, a 14-unit period is usually best.

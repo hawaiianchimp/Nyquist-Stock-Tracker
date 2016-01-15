@@ -8,7 +8,7 @@ export default Ember.Service.extend({
    * This function returns an array from text passed into it
    * Used for inputs that should be arrays
    *
-   * @param  {String} text [comma separated text that will be an array]
+   * @param  {String, Array} text [comma separated text that will be an array]
    * @return {Array}      [returns array]
    */
   convertToArray: function(text) {
