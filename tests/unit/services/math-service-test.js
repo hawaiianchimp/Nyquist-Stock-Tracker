@@ -50,3 +50,26 @@ test('Exponential Moving Average', function(assert) {
   assert.equal(service.ema([24.05,23.75,23.83,23.95,23.63,23.82,23.87,23.65,23.19,23.10,23.33,
 23.68,23.10,22.40,22.17], 10), 23, 'testing with real data but limited');
 });
+
+test('Relative Price Index', function(assert) {
+  assert.expect(18);
+  assert.equal(service.rsi([1,10,1], 0), 100, 'testing zero days selected');
+  assert.equal(service.rsi([], 3), 100, 'testing empty array');
+  assert.equal(service.rsi([1,1,1], 3), 100, 'testing days equal to array.length');
+  assert.equal(service.rsi([1,1,1], 2), 100, 'testing days less than array.length');
+  assert.equal(service.rsi([1,1,1], 4), 100, 'testing days greater than array.length');
+  assert.equal(service.rsi([2,5,2], 3), 50, 'testing different numbers');
+  assert.equal(service.rsi([2,5,2]), 50, 'testing optional limit');
+  assert.equal(service.rsi([2,4,7,4], 3), 63, 'testing larger arrays');
+  assert.equal(service.rsi([2,4,728,4,10,2,6], 5), 50, 'testing larger inputs');
+  assert.equal(service.rsi([1,2,3,4,5,6,7,8,9,10], 10), 100, 'testing larger inputs');
+  assert.equal(service.rsi([10,9,8,7,6,5,4,3,2,1], 10), 0, 'testing larger inputs');
+  assert.equal(service.rsi([2,4,6,4,10,3,728], 5), 99, 'testing larger inputs');
+  assert.equal(service.rsi([1,2,3,4,5], 200), 100, 'testing large days selection');
+  assert.equal(service.rsi([1,2,3,4,6,2,63,5], 200), 52, 'testing decimal output');
+  assert.equal(service.rsi([1.45,2.25,3.12,4.76,6.2,2.3,63.9,5.6], 200), 52, 'testing decimal input');
+  assert.equal(service.rsi([4,5,2], 3), 25, 'testing rounding of repeating decimal output');
+  assert.equal(service.rsi([22.27,22.19,22.08,22.17,22.18,22.13,22.23,22.43,22.24,22.29], 10), 51, 'testing real data');
+  assert.equal(service.rsi([24.05,23.75,23.83,23.95,23.63,23.82,23.87,23.65,23.19,23.10,23.33,
+    23.68,23.10,22.40,22.17], 10), 26, 'testing with real data but limited');
+});

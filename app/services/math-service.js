@@ -57,15 +57,33 @@ export default Ember.Service.extend({
   rsi(data, limit = data.length) {
     Ember.assert('Limit must be an Integer', typeof limit === 'number');
     Ember.assert('Data must be an Array', data.constructor === Array);
-    let ups,downs;
-    for(let i = data.length - 1; i > 1; i--){
+    if (limit <= 1 || data.length === 1) {
+      return 100;
+    }
+    let ups = [];
+    let downs = [];
+    let u,d,rs;
+
+    for(let i = data.length - 1; i > 0; i--){
       if(data[i] > data[i - 1]) {
         ups.push(data[i] - data[i - 1]);
-      } else{
+        downs.push(0);
+      } else if (data[i] < data[i - 1]) {
+        ups.push(0);
         downs.push(data[i - 1] - data[i]);
+      } else{
+        ups.push(0);
+        downs.push(0);
       }
     }
-    return 100 - 100/(1 + this.sma(ups)/this.sma(downs));
+    u = this.sma(ups);
+    d = this.sma(downs);
+
+    if(d === 0) { return 100; }
+
+    rs = u/d;
+
+    return Math.round(100 - 100/(1 + rs));
   },
 
   /**
