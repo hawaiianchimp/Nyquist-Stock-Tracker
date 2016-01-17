@@ -6,9 +6,9 @@ export default Ember.Service.extend({
   /**
    * Calculates the moving average of an array of values
    *
-   * @param  {Array} data  [The data]
+   * @param  {Array} data [The data]
    * @param  {Number} limit [The number of data points to calculate over]
-   * @returns {Number} The simple moving average
+   * @returns {Number} [The simple moving average]
    */
   sma(data, limit = data.length) {
     Ember.assert('Limit must be an Integer', typeof limit === 'number');
@@ -27,7 +27,7 @@ export default Ember.Service.extend({
    *
    * @param {Array} data [The data]
    * @param {Number} limit [The number of data points to calculate over]
-   * @returns {Number} The exponential moving average
+   * @returns {Number} [The exponential moving average]
    */
   ema: function ema(data, limit = data.length) {
     Ember.assert('Limit must be an Integer', typeof limit === 'number');
@@ -52,7 +52,7 @@ export default Ember.Service.extend({
    *
    * @param {Array} data [The data]
    * @param {Number} limit [The number of data points to calculate over]
-   * @returns {number} The relative strength index
+   * @returns {number} [The relative strength index]
    */
   rsi(data, limit = data.length) {
     Ember.assert('Limit must be an Integer', typeof limit === 'number');
@@ -89,9 +89,9 @@ export default Ember.Service.extend({
   /**
    * Rounds number to the specified number of digits
    *
-   * @param  {Number} decimal Digits to round number to
-   * @param  {Number} number  Number to round
-   * @returns {Number} the rounded number
+   * @param  {Number} decimal [Digits to round number to]
+   * @param  {Number} number  [Number to round]
+   * @returns {Number} [The rounded number]
    */
   roundToNearest(number, decimal = 3) {
     let tens = Math.pow(10, decimal);
@@ -100,7 +100,8 @@ export default Ember.Service.extend({
 
   /**
    * Returns true if it is a number
-   * @param {Number} i Number to be be checked
+   *
+   * @param {Number} i [Number to be be checked]
    * @returns {boolean}
    */
   isNumber(i) {

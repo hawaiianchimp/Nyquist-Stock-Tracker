@@ -26,10 +26,10 @@
       <file leaf-file-name="math-service.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/services/math-service.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6976744">
-              <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.6802326">
+              <caret line="103" column="48" selection-start-line="103" selection-start-column="48" selection-end-line="103" selection-end-column="48" />
               <folding>
-                <marker date="1453023151000" expanded="true" signature="64:374" placeholder="{...}" />
+                <marker date="1453023261000" expanded="true" signature="64:375" placeholder="{...}" />
               </folding>
             </state>
           </provider>
@@ -41,13 +41,12 @@
             <state vertical-scroll-proportion="0.0">
               <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
               <folding>
-                <marker date="1453022717000" expanded="true" signature="5072:5641" placeholder="{...}" />
-                <marker date="1453022717000" expanded="true" signature="5147:5641" placeholder="{...}" />
-                <marker date="1453022717000" expanded="true" signature="5207:5474" placeholder="/** Calculates the moving average of an array of values ...*/" />
-                <marker date="1453022717000" expanded="true" signature="5631:5641" placeholder="{...}" />
-                <marker date="1453022717000" expanded="true" signature="25919:25924" placeholder="{...}" />
-                <marker date="1453022717000" expanded="true" signature="28012:28025" placeholder="{...}" />
-                <marker date="1453022717000" expanded="true" signature="28012:28020" placeholder="{...}" />
+                <marker date="1453023153000" expanded="true" signature="5072:5293" placeholder="{...}" />
+                <marker date="1453023153000" expanded="true" signature="5147:5293" placeholder="{...}" />
+                <marker date="1453023153000" expanded="true" signature="5207:5293" placeholder="/** Calculates the moving average of an array of values ...*/" />
+                <marker date="1453023153000" expanded="true" signature="26068:26073" placeholder="{...}" />
+                <marker date="1453023153000" expanded="true" signature="28161:28169" placeholder="{...}" />
+                <marker date="1453023153000" expanded="true" signature="28161:28174" placeholder="{...}" />
               </folding>
             </state>
           </provider>
@@ -442,7 +441,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1453023151000" expanded="true" signature="64:374" placeholder="{...}" />
+            <marker date="1453023261000" expanded="true" signature="64:375" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -493,7 +492,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="22" column="36" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
           <folding>
-            <marker date="1453023151000" expanded="true" signature="64:374" placeholder="{...}" />
+            <marker date="1453023261000" expanded="true" signature="64:375" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -553,7 +552,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="47" column="45" selection-start-line="47" selection-start-column="24" selection-end-line="47" selection-end-column="45" />
           <folding>
-            <marker date="1453023151000" expanded="true" signature="64:374" placeholder="{...}" />
+            <marker date="1453023261000" expanded="true" signature="64:375" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -597,7 +596,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="24" />
           <folding>
-            <marker date="1453023151000" expanded="true" signature="64:374" placeholder="{...}" />
+            <marker date="1453023261000" expanded="true" signature="64:375" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -641,7 +640,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="24" />
           <folding>
-            <marker date="1453023151000" expanded="true" signature="64:374" placeholder="{...}" />
+            <marker date="1453023261000" expanded="true" signature="64:375" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -797,13 +796,12 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
           <folding>
-            <marker date="1453022717000" expanded="true" signature="5072:5641" placeholder="{...}" />
-            <marker date="1453022717000" expanded="true" signature="5147:5641" placeholder="{...}" />
-            <marker date="1453022717000" expanded="true" signature="5207:5474" placeholder="/** Calculates the moving average of an array of values ...*/" />
-            <marker date="1453022717000" expanded="true" signature="5631:5641" placeholder="{...}" />
-            <marker date="1453022717000" expanded="true" signature="25919:25924" placeholder="{...}" />
-            <marker date="1453022717000" expanded="true" signature="28012:28025" placeholder="{...}" />
-            <marker date="1453022717000" expanded="true" signature="28012:28020" placeholder="{...}" />
+            <marker date="1453023153000" expanded="true" signature="5072:5293" placeholder="{...}" />
+            <marker date="1453023153000" expanded="true" signature="5147:5293" placeholder="{...}" />
+            <marker date="1453023153000" expanded="true" signature="5207:5293" placeholder="/** Calculates the moving average of an array of values ...*/" />
+            <marker date="1453023153000" expanded="true" signature="26068:26073" placeholder="{...}" />
+            <marker date="1453023153000" expanded="true" signature="28161:28169" placeholder="{...}" />
+            <marker date="1453023153000" expanded="true" signature="28161:28174" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -845,10 +843,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/services/math-service.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6976744">
-          <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.6802326">
+          <caret line="103" column="48" selection-start-line="103" selection-start-column="48" selection-end-line="103" selection-end-column="48" />
           <folding>
-            <marker date="1453023151000" expanded="true" signature="64:374" placeholder="{...}" />
+            <marker date="1453023261000" expanded="true" signature="64:375" placeholder="{...}" />
           </folding>
         </state>
       </provider>
