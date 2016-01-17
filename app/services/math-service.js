@@ -89,8 +89,8 @@ export default Ember.Service.extend({
   /**
    * Rounds number to the specified number of digits
    *
-   * @param  {Number} decimal [Digits to round number to]
    * @param  {Number} number  [Number to round]
+   * @param  {Number} decimal [Digits to round number to]
    * @returns {Number} [The rounded number]
    */
   roundToNearest(number, decimal = 3) {
