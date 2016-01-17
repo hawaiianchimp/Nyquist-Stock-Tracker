@@ -10,6 +10,6 @@ export default Ember.Component.extend({
 		return this.get('stream') ? this.get('stream').split(','): 0; 
 	}),
 	movingAverage: Ember.computed('input', 'days', 'points', function(){
-		return this.get('math').sma(this.get('days'), this.get('points'));
+		return this.get('math').sma(this.get('points'), this.get('days'));
 	})
 });

@@ -10,7 +10,7 @@ export default Ember.Service.extend({
    * @param  {Array} data  [The array of values]
    * @return {Number}       The simple moving average
    */
-  sma(limit, data) {
+  sma(data, limit = data.length) {
     Ember.assert('Limit must be an Integer', typeof limit === 'number');
     Ember.assert('Data must be an Array', data.constructor === Array);
 
@@ -29,24 +29,43 @@ export default Ember.Service.extend({
    * @param {Array} data [The data]
    * @returns {Number}
    */
-  ema: function ema(limit, data) {
+  ema: function ema(data, limit = data.length) {
     Ember.assert('Limit must be an Integer', typeof limit === 'number');
     Ember.assert('Data must be an Array', data.constructor === Array);
 
     if (limit <= 0 || data.length === 0) {
       return 0;
-    }
-    if(limit === 1 || data.length === 1) {
+    } else if(limit === 1 || data.length === 1) {
       return data[0];
-    }
-    else {
+    } else {
       let values = data.slice(-limit);
       let prev = values.slice(0,-1);
       let curr = values.slice(-1);
       let weight = Math.round(2/(values.length + 1) * 1000000) / 1000000;
-      let result = weight * curr[0] + (1 - weight) * ema(prev.length, prev);
+      let result = weight * curr[0] + (1 - weight) * ema(prev);
       return Math.round(result * 100) / 100;
     }
+  },
+
+  /**
+   *
+   *
+   * @param limit
+   * @param data
+   * @returns {number}
+   */
+  rsi(data, limit = data.length) {
+    Ember.assert('Limit must be an Integer', typeof limit === 'number');
+    Ember.assert('Data must be an Array', data.constructor === Array);
+    let ups,downs;
+    for(let i = data.length - 1; i > 1; i--){
+      if(data[i] > data[i - 1]) {
+        ups.push(data[i] - data[i - 1]);
+      } else{
+        downs.push(data[i - 1] - data[i]);
+      }
+    }
+    return 100 - 100/(1 + this.sma(ups)/this.sma(downs));
   },
 
   /**
@@ -56,7 +75,7 @@ export default Ember.Service.extend({
    * @param  {Number} number  Number to round
    * @return {Number}         the rounded number
    */
-  roundToNearest(decimal, number) {
+  roundToNearest(number, decimal = 3) {
     let tens = Math.pow(10, decimal);
     return Math.round(number * tens) / tens;
   },
@@ -66,7 +85,7 @@ export default Ember.Service.extend({
    * @param {Number} i Number to be be checked
    * @returns {boolean}
    */
-  isNumber(i){
+  isNumber(i) {
     return !isNaN(i) && typeof i === "number";
   }
 });

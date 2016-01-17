@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="08551b47-3c3b-442f-a9cd-f4481e6af481" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/stock-nyquist.iml" afterPath="$PROJECT_DIR$/.idea/stock-nyquist.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/graph-display.js" afterPath="$PROJECT_DIR$/app/components/graph-display.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/services/math-service.js" afterPath="$PROJECT_DIR$/app/services/math-service.js" />
@@ -26,13 +27,30 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="math-service.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="math-service.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/services/math-service.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.666667">
-              <caret line="29" column="22" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
+            <state vertical-scroll-proportion="0.31976745">
+              <caret line="57" column="4" selection-start-line="57" selection-start-column="4" selection-end-line="57" selection-end-column="4" />
               <folding>
-                <marker date="1452994101000" expanded="true" signature="64:383" placeholder="{...}" />
+                <marker date="1452997625000" expanded="true" signature="64:397" placeholder="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="stock-nyquist.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dist/assets/stock-nyquist.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+              <folding>
+                <marker date="1452997585000" expanded="true" signature="5072:5641" placeholder="{...}" />
+                <marker date="1452997585000" expanded="true" signature="5147:5641" placeholder="{...}" />
+                <marker date="1452997585000" expanded="true" signature="5207:5474" placeholder="/** Calculates the moving average of an array of values ...*/" />
+                <marker date="1452997585000" expanded="true" signature="5503:5641" placeholder="{...}" />
+                <marker date="1452997585000" expanded="true" signature="25570:25571" placeholder="{...}" />
+                <marker date="1452997585000" expanded="true" signature="25570:25576" placeholder="{...}" />
               </folding>
             </state>
           </provider>
@@ -88,22 +106,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="math-service-test.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="math-service-test.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/unit/services/math-service-test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.22651933">
-              <caret line="23" column="92" selection-start-line="23" selection-start-column="92" selection-end-line="23" selection-end-column="92" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding>
-                <marker date="1452994291000" expanded="true" signature="129:241" placeholder="{...}" />
-                <marker date="1452994291000" expanded="true" signature="327:422" placeholder="{...}" />
-                <marker date="1452994291000" expanded="true" signature="422:483" placeholder="{...}" />
-                <marker date="1452994291000" expanded="true" signature="483:564" placeholder="{...}" />
-                <marker date="1452994291000" expanded="true" signature="564:646" placeholder="{...}" />
-                <marker date="1452994291000" expanded="true" signature="646:732" placeholder="{...}" />
-                <marker date="1452994291000" expanded="true" signature="732:804" placeholder="{...}" />
-                <marker date="1452994291000" expanded="true" signature="804:874" placeholder="{...}" />
-                <marker date="1452994291000" expanded="true" signature="874:955" placeholder="{...}" />
-                <marker date="1452994291000" expanded="true" signature="955:1036" placeholder="{...}" />
+                <marker date="1452997539000" expanded="true" signature="129:241" placeholder="{...}" />
+                <marker date="1452997539000" expanded="true" signature="327:422" placeholder="{...}" />
+                <marker date="1452997539000" expanded="true" signature="422:483" placeholder="{...}" />
+                <marker date="1452997539000" expanded="true" signature="483:564" placeholder="{...}" />
+                <marker date="1452997539000" expanded="true" signature="564:646" placeholder="{...}" />
+                <marker date="1452997539000" expanded="true" signature="646:732" placeholder="{...}" />
+                <marker date="1452997539000" expanded="true" signature="732:804" placeholder="{...}" />
+                <marker date="1452997539000" expanded="true" signature="874:944" placeholder="{...}" />
+                <marker date="1452997539000" expanded="true" signature="944:1025" placeholder="{...}" />
+                <marker date="1452997539000" expanded="true" signature="1025:1106" placeholder="{...}" />
               </folding>
             </state>
           </provider>
@@ -143,9 +161,10 @@
         <option value="$PROJECT_DIR$/bower.json" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/app/services/input-service.js" />
+        <option value="$PROJECT_DIR$/dist/assets/stock-nyquist.js" />
+        <option value="$PROJECT_DIR$/tests/unit/services/math-service-test.js" />
         <option value="$PROJECT_DIR$/app/components/graph-display.js" />
         <option value="$PROJECT_DIR$/app/services/math-service.js" />
-        <option value="$PROJECT_DIR$/tests/unit/services/math-service-test.js" />
       </list>
     </option>
   </component>
@@ -161,9 +180,9 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="313" />
+    <option name="x" value="136" />
     <option name="y" value="33" />
-    <option name="width" value="1267" />
+    <option name="width" value="1747" />
     <option name="height" value="924" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -241,107 +260,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="tests" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stock-nyquist" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stock-nyquist" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tests" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="unit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stock-nyquist" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stock-nyquist" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tests" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="unit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="services" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stock-nyquist" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stock-nyquist" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dist" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stock-nyquist" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stock-nyquist" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stock-nyquist" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stock-nyquist" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stock-nyquist" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stock-nyquist" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="styles" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -360,96 +279,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="services" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stock-nyquist" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stock-nyquist" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="routes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stock-nyquist" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stock-nyquist" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stock-nyquist" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stock-nyquist" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="helpers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stock-nyquist" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stock-nyquist" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stock-nyquist" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stock-nyquist" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -527,10 +356,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="313" y="33" width="1267" height="924" extended-state="0" />
+    <frame x="136" y="33" width="1747" height="924" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2762431" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20034344" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -562,7 +391,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1452994101000" expanded="true" signature="64:383" placeholder="{...}" />
+            <marker date="1452997625000" expanded="true" signature="64:397" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -613,7 +442,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="22" column="36" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
           <folding>
-            <marker date="1452994101000" expanded="true" signature="64:383" placeholder="{...}" />
+            <marker date="1452997625000" expanded="true" signature="64:397" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -639,16 +468,16 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1452994291000" expanded="true" signature="129:241" placeholder="{...}" />
-            <marker date="1452994291000" expanded="true" signature="327:422" placeholder="{...}" />
-            <marker date="1452994291000" expanded="true" signature="422:483" placeholder="{...}" />
-            <marker date="1452994291000" expanded="true" signature="483:564" placeholder="{...}" />
-            <marker date="1452994291000" expanded="true" signature="564:646" placeholder="{...}" />
-            <marker date="1452994291000" expanded="true" signature="646:732" placeholder="{...}" />
-            <marker date="1452994291000" expanded="true" signature="732:804" placeholder="{...}" />
-            <marker date="1452994291000" expanded="true" signature="804:874" placeholder="{...}" />
-            <marker date="1452994291000" expanded="true" signature="874:955" placeholder="{...}" />
-            <marker date="1452994291000" expanded="true" signature="955:1036" placeholder="{...}" />
+            <marker date="1452997539000" expanded="true" signature="129:241" placeholder="{...}" />
+            <marker date="1452997539000" expanded="true" signature="327:422" placeholder="{...}" />
+            <marker date="1452997539000" expanded="true" signature="422:483" placeholder="{...}" />
+            <marker date="1452997539000" expanded="true" signature="483:564" placeholder="{...}" />
+            <marker date="1452997539000" expanded="true" signature="564:646" placeholder="{...}" />
+            <marker date="1452997539000" expanded="true" signature="646:732" placeholder="{...}" />
+            <marker date="1452997539000" expanded="true" signature="732:804" placeholder="{...}" />
+            <marker date="1452997539000" expanded="true" signature="874:944" placeholder="{...}" />
+            <marker date="1452997539000" expanded="true" signature="944:1025" placeholder="{...}" />
+            <marker date="1452997539000" expanded="true" signature="1025:1106" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -673,7 +502,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="47" column="45" selection-start-line="47" selection-start-column="24" selection-end-line="47" selection-end-column="45" />
           <folding>
-            <marker date="1452994101000" expanded="true" signature="64:383" placeholder="{...}" />
+            <marker date="1452997625000" expanded="true" signature="64:397" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -683,16 +512,16 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="17" column="42" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
           <folding>
-            <marker date="1452994291000" expanded="true" signature="129:241" placeholder="{...}" />
-            <marker date="1452994291000" expanded="true" signature="327:422" placeholder="{...}" />
-            <marker date="1452994291000" expanded="true" signature="422:483" placeholder="{...}" />
-            <marker date="1452994291000" expanded="true" signature="483:564" placeholder="{...}" />
-            <marker date="1452994291000" expanded="true" signature="564:646" placeholder="{...}" />
-            <marker date="1452994291000" expanded="true" signature="646:732" placeholder="{...}" />
-            <marker date="1452994291000" expanded="true" signature="732:804" placeholder="{...}" />
-            <marker date="1452994291000" expanded="true" signature="804:874" placeholder="{...}" />
-            <marker date="1452994291000" expanded="true" signature="874:955" placeholder="{...}" />
-            <marker date="1452994291000" expanded="true" signature="955:1036" placeholder="{...}" />
+            <marker date="1452997539000" expanded="true" signature="129:241" placeholder="{...}" />
+            <marker date="1452997539000" expanded="true" signature="327:422" placeholder="{...}" />
+            <marker date="1452997539000" expanded="true" signature="422:483" placeholder="{...}" />
+            <marker date="1452997539000" expanded="true" signature="483:564" placeholder="{...}" />
+            <marker date="1452997539000" expanded="true" signature="564:646" placeholder="{...}" />
+            <marker date="1452997539000" expanded="true" signature="646:732" placeholder="{...}" />
+            <marker date="1452997539000" expanded="true" signature="732:804" placeholder="{...}" />
+            <marker date="1452997539000" expanded="true" signature="874:944" placeholder="{...}" />
+            <marker date="1452997539000" expanded="true" signature="944:1025" placeholder="{...}" />
+            <marker date="1452997539000" expanded="true" signature="1025:1106" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -717,7 +546,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="24" />
           <folding>
-            <marker date="1452994101000" expanded="true" signature="64:383" placeholder="{...}" />
+            <marker date="1452997625000" expanded="true" signature="64:397" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -727,16 +556,16 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
           <folding>
-            <marker date="1452994291000" expanded="true" signature="129:241" placeholder="{...}" />
-            <marker date="1452994291000" expanded="true" signature="327:422" placeholder="{...}" />
-            <marker date="1452994291000" expanded="true" signature="422:483" placeholder="{...}" />
-            <marker date="1452994291000" expanded="true" signature="483:564" placeholder="{...}" />
-            <marker date="1452994291000" expanded="true" signature="564:646" placeholder="{...}" />
-            <marker date="1452994291000" expanded="true" signature="646:732" placeholder="{...}" />
-            <marker date="1452994291000" expanded="true" signature="732:804" placeholder="{...}" />
-            <marker date="1452994291000" expanded="true" signature="804:874" placeholder="{...}" />
-            <marker date="1452994291000" expanded="true" signature="874:955" placeholder="{...}" />
-            <marker date="1452994291000" expanded="true" signature="955:1036" placeholder="{...}" />
+            <marker date="1452997539000" expanded="true" signature="129:241" placeholder="{...}" />
+            <marker date="1452997539000" expanded="true" signature="327:422" placeholder="{...}" />
+            <marker date="1452997539000" expanded="true" signature="422:483" placeholder="{...}" />
+            <marker date="1452997539000" expanded="true" signature="483:564" placeholder="{...}" />
+            <marker date="1452997539000" expanded="true" signature="564:646" placeholder="{...}" />
+            <marker date="1452997539000" expanded="true" signature="646:732" placeholder="{...}" />
+            <marker date="1452997539000" expanded="true" signature="732:804" placeholder="{...}" />
+            <marker date="1452997539000" expanded="true" signature="874:944" placeholder="{...}" />
+            <marker date="1452997539000" expanded="true" signature="944:1025" placeholder="{...}" />
+            <marker date="1452997539000" expanded="true" signature="1025:1106" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -761,7 +590,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="24" />
           <folding>
-            <marker date="1452994101000" expanded="true" signature="64:383" placeholder="{...}" />
+            <marker date="1452997625000" expanded="true" signature="64:397" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -771,16 +600,16 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
           <folding>
-            <marker date="1452994291000" expanded="true" signature="129:241" placeholder="{...}" />
-            <marker date="1452994291000" expanded="true" signature="327:422" placeholder="{...}" />
-            <marker date="1452994291000" expanded="true" signature="422:483" placeholder="{...}" />
-            <marker date="1452994291000" expanded="true" signature="483:564" placeholder="{...}" />
-            <marker date="1452994291000" expanded="true" signature="564:646" placeholder="{...}" />
-            <marker date="1452994291000" expanded="true" signature="646:732" placeholder="{...}" />
-            <marker date="1452994291000" expanded="true" signature="732:804" placeholder="{...}" />
-            <marker date="1452994291000" expanded="true" signature="804:874" placeholder="{...}" />
-            <marker date="1452994291000" expanded="true" signature="874:955" placeholder="{...}" />
-            <marker date="1452994291000" expanded="true" signature="955:1036" placeholder="{...}" />
+            <marker date="1452997539000" expanded="true" signature="129:241" placeholder="{...}" />
+            <marker date="1452997539000" expanded="true" signature="327:422" placeholder="{...}" />
+            <marker date="1452997539000" expanded="true" signature="422:483" placeholder="{...}" />
+            <marker date="1452997539000" expanded="true" signature="483:564" placeholder="{...}" />
+            <marker date="1452997539000" expanded="true" signature="564:646" placeholder="{...}" />
+            <marker date="1452997539000" expanded="true" signature="646:732" placeholder="{...}" />
+            <marker date="1452997539000" expanded="true" signature="732:804" placeholder="{...}" />
+            <marker date="1452997539000" expanded="true" signature="874:944" placeholder="{...}" />
+            <marker date="1452997539000" expanded="true" signature="944:1025" placeholder="{...}" />
+            <marker date="1452997539000" expanded="true" signature="1025:1106" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -911,14 +740,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/components/graph-display.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/services/input-service.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -927,31 +748,54 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/services/math-service.js">
+    <entry file="file://$PROJECT_DIR$/dist/assets/stock-nyquist.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.666667">
-          <caret line="29" column="22" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding>
-            <marker date="1452994101000" expanded="true" signature="64:383" placeholder="{...}" />
+            <marker date="1452997585000" expanded="true" signature="5072:5641" placeholder="{...}" />
+            <marker date="1452997585000" expanded="true" signature="5147:5641" placeholder="{...}" />
+            <marker date="1452997585000" expanded="true" signature="5207:5474" placeholder="/** Calculates the moving average of an array of values ...*/" />
+            <marker date="1452997585000" expanded="true" signature="5503:5641" placeholder="{...}" />
+            <marker date="1452997585000" expanded="true" signature="25570:25571" placeholder="{...}" />
+            <marker date="1452997585000" expanded="true" signature="25570:25576" placeholder="{...}" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/graph-display.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/unit/services/math-service-test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.22651933">
-          <caret line="23" column="92" selection-start-line="23" selection-start-column="92" selection-end-line="23" selection-end-column="92" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding>
-            <marker date="1452994291000" expanded="true" signature="129:241" placeholder="{...}" />
-            <marker date="1452994291000" expanded="true" signature="327:422" placeholder="{...}" />
-            <marker date="1452994291000" expanded="true" signature="422:483" placeholder="{...}" />
-            <marker date="1452994291000" expanded="true" signature="483:564" placeholder="{...}" />
-            <marker date="1452994291000" expanded="true" signature="564:646" placeholder="{...}" />
-            <marker date="1452994291000" expanded="true" signature="646:732" placeholder="{...}" />
-            <marker date="1452994291000" expanded="true" signature="732:804" placeholder="{...}" />
-            <marker date="1452994291000" expanded="true" signature="804:874" placeholder="{...}" />
-            <marker date="1452994291000" expanded="true" signature="874:955" placeholder="{...}" />
-            <marker date="1452994291000" expanded="true" signature="955:1036" placeholder="{...}" />
+            <marker date="1452997539000" expanded="true" signature="129:241" placeholder="{...}" />
+            <marker date="1452997539000" expanded="true" signature="327:422" placeholder="{...}" />
+            <marker date="1452997539000" expanded="true" signature="422:483" placeholder="{...}" />
+            <marker date="1452997539000" expanded="true" signature="483:564" placeholder="{...}" />
+            <marker date="1452997539000" expanded="true" signature="564:646" placeholder="{...}" />
+            <marker date="1452997539000" expanded="true" signature="646:732" placeholder="{...}" />
+            <marker date="1452997539000" expanded="true" signature="732:804" placeholder="{...}" />
+            <marker date="1452997539000" expanded="true" signature="874:944" placeholder="{...}" />
+            <marker date="1452997539000" expanded="true" signature="944:1025" placeholder="{...}" />
+            <marker date="1452997539000" expanded="true" signature="1025:1106" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/services/math-service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.31976745">
+          <caret line="57" column="4" selection-start-line="57" selection-start-column="4" selection-end-line="57" selection-end-column="4" />
+          <folding>
+            <marker date="1452997625000" expanded="true" signature="64:397" placeholder="{...}" />
           </folding>
         </state>
       </provider>
