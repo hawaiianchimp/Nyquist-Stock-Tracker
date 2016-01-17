@@ -6,9 +6,9 @@ export default Ember.Service.extend({
   /**
    * Calculates the moving average of an array of values
    *
-   * @param  {Number} limit [The number of days to calculate the moving average]
-   * @param  {Array} data  [The array of values]
-   * @return {Number}       The simple moving average
+   * @param  {Array} data  [The data]
+   * @param  {Number} limit [The number of data points to calculate over]
+   * @returns {Number} The simple moving average
    */
   sma(data, limit = data.length) {
     Ember.assert('Limit must be an Integer', typeof limit === 'number');
@@ -25,9 +25,9 @@ export default Ember.Service.extend({
   /**
    * Recursive function to calculate Exponential Moving Average
    *
-   * @param {Number} limit [The number of data points to calculate over]
    * @param {Array} data [The data]
-   * @returns {Number}
+   * @param {Number} limit [The number of data points to calculate over]
+   * @returns {Number} The exponential moving average
    */
   ema: function ema(data, limit = data.length) {
     Ember.assert('Limit must be an Integer', typeof limit === 'number');
@@ -48,11 +48,11 @@ export default Ember.Service.extend({
   },
 
   /**
+   * Function to calculate Relative Strength Index
    *
-   *
-   * @param limit
-   * @param data
-   * @returns {number}
+   * @param {Array} data [The data]
+   * @param {Number} limit [The number of data points to calculate over]
+   * @returns {number} The relative strength index
    */
   rsi(data, limit = data.length) {
     Ember.assert('Limit must be an Integer', typeof limit === 'number');
@@ -91,7 +91,7 @@ export default Ember.Service.extend({
    *
    * @param  {Number} decimal Digits to round number to
    * @param  {Number} number  Number to round
-   * @return {Number}         the rounded number
+   * @returns {Number} the rounded number
    */
   roundToNearest(number, decimal = 3) {
     let tens = Math.pow(10, decimal);

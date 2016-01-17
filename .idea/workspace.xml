@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="08551b47-3c3b-442f-a9cd-f4481e6af481" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/services/math-service.js" afterPath="$PROJECT_DIR$/app/services/math-service.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/unit/services/math-service-test.js" afterPath="$PROJECT_DIR$/tests/unit/services/math-service-test.js" />
     </list>
     <ignored path="stock-nyquist.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,13 +23,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="math-service.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="math-service.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/services/math-service.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.3703704">
-              <caret line="43" column="31" selection-start-line="43" selection-start-column="30" selection-end-line="43" selection-end-column="31" />
+            <state vertical-scroll-proportion="0.6976744">
+              <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
               <folding>
-                <marker date="1453022462000" expanded="true" signature="64:397" placeholder="{...}" />
+                <marker date="1453023151000" expanded="true" signature="64:374" placeholder="{...}" />
               </folding>
             </state>
           </provider>
@@ -42,13 +41,13 @@
             <state vertical-scroll-proportion="0.0">
               <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
               <folding>
-                <marker date="1453022630000" expanded="true" signature="5072:5641" placeholder="{...}" />
-                <marker date="1453022630000" expanded="true" signature="5147:5641" placeholder="{...}" />
-                <marker date="1453022630000" expanded="true" signature="5207:5474" placeholder="/** Calculates the moving average of an array of values ...*/" />
-                <marker date="1453022630000" expanded="true" signature="5631:5641" placeholder="{...}" />
-                <marker date="1453022630000" expanded="true" signature="25919:25924" placeholder="{...}" />
-                <marker date="1453022630000" expanded="true" signature="28010:28023" placeholder="{...}" />
-                <marker date="1453022630000" expanded="true" signature="28010:28018" placeholder="{...}" />
+                <marker date="1453022717000" expanded="true" signature="5072:5641" placeholder="{...}" />
+                <marker date="1453022717000" expanded="true" signature="5147:5641" placeholder="{...}" />
+                <marker date="1453022717000" expanded="true" signature="5207:5474" placeholder="/** Calculates the moving average of an array of values ...*/" />
+                <marker date="1453022717000" expanded="true" signature="5631:5641" placeholder="{...}" />
+                <marker date="1453022717000" expanded="true" signature="25919:25924" placeholder="{...}" />
+                <marker date="1453022717000" expanded="true" signature="28012:28025" placeholder="{...}" />
+                <marker date="1453022717000" expanded="true" signature="28012:28020" placeholder="{...}" />
               </folding>
             </state>
           </provider>
@@ -104,10 +103,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="math-service-test.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="math-service-test.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/unit/services/math-service-test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7513812">
+            <state vertical-scroll-proportion="0.0">
               <caret line="69" column="75" selection-start-line="69" selection-start-column="75" selection-end-line="69" selection-end-column="75" />
               <folding>
                 <marker date="1453022715000" expanded="true" signature="129:241" placeholder="{...}" />
@@ -125,21 +124,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="input-service.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/services/input-service.js">
+      <file leaf-file-name=".travis.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.travis.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+              <caret line="22" column="12" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+      <file leaf-file-name="input-service.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/services/input-service.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -161,8 +160,8 @@
         <option value="$PROJECT_DIR$/app/services/input-service.js" />
         <option value="$PROJECT_DIR$/dist/assets/stock-nyquist.js" />
         <option value="$PROJECT_DIR$/app/components/graph-display.js" />
-        <option value="$PROJECT_DIR$/app/services/math-service.js" />
         <option value="$PROJECT_DIR$/tests/unit/services/math-service-test.js" />
+        <option value="$PROJECT_DIR$/app/services/math-service.js" />
       </list>
     </option>
   </component>
@@ -443,7 +442,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1453022462000" expanded="true" signature="64:397" placeholder="{...}" />
+            <marker date="1453023151000" expanded="true" signature="64:374" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -494,7 +493,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="22" column="36" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
           <folding>
-            <marker date="1453022462000" expanded="true" signature="64:397" placeholder="{...}" />
+            <marker date="1453023151000" expanded="true" signature="64:374" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -554,7 +553,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="47" column="45" selection-start-line="47" selection-start-column="24" selection-end-line="47" selection-end-column="45" />
           <folding>
-            <marker date="1453022462000" expanded="true" signature="64:397" placeholder="{...}" />
+            <marker date="1453023151000" expanded="true" signature="64:374" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -598,7 +597,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="24" />
           <folding>
-            <marker date="1453022462000" expanded="true" signature="64:397" placeholder="{...}" />
+            <marker date="1453023151000" expanded="true" signature="64:374" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -642,7 +641,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="24" />
           <folding>
-            <marker date="1453022462000" expanded="true" signature="64:397" placeholder="{...}" />
+            <marker date="1453023151000" expanded="true" signature="64:374" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -667,13 +666,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.travis.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -805,13 +797,13 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
           <folding>
-            <marker date="1453022630000" expanded="true" signature="5072:5641" placeholder="{...}" />
-            <marker date="1453022630000" expanded="true" signature="5147:5641" placeholder="{...}" />
-            <marker date="1453022630000" expanded="true" signature="5207:5474" placeholder="/** Calculates the moving average of an array of values ...*/" />
-            <marker date="1453022630000" expanded="true" signature="5631:5641" placeholder="{...}" />
-            <marker date="1453022630000" expanded="true" signature="25919:25924" placeholder="{...}" />
-            <marker date="1453022630000" expanded="true" signature="28010:28023" placeholder="{...}" />
-            <marker date="1453022630000" expanded="true" signature="28010:28018" placeholder="{...}" />
+            <marker date="1453022717000" expanded="true" signature="5072:5641" placeholder="{...}" />
+            <marker date="1453022717000" expanded="true" signature="5147:5641" placeholder="{...}" />
+            <marker date="1453022717000" expanded="true" signature="5207:5474" placeholder="/** Calculates the moving average of an array of values ...*/" />
+            <marker date="1453022717000" expanded="true" signature="5631:5641" placeholder="{...}" />
+            <marker date="1453022717000" expanded="true" signature="25919:25924" placeholder="{...}" />
+            <marker date="1453022717000" expanded="true" signature="28012:28025" placeholder="{...}" />
+            <marker date="1453022717000" expanded="true" signature="28012:28020" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -824,19 +816,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/services/math-service.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.3703704">
-          <caret line="43" column="31" selection-start-line="43" selection-start-column="30" selection-end-line="43" selection-end-column="31" />
-          <folding>
-            <marker date="1453022462000" expanded="true" signature="64:397" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/unit/services/math-service-test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7513812">
+        <state vertical-scroll-proportion="0.0">
           <caret line="69" column="75" selection-start-line="69" selection-start-column="75" selection-end-line="69" selection-end-column="75" />
           <folding>
             <marker date="1453022715000" expanded="true" signature="129:241" placeholder="{...}" />
@@ -849,6 +831,24 @@
             <marker date="1453022715000" expanded="true" signature="874:944" placeholder="{...}" />
             <marker date="1453022715000" expanded="true" signature="944:1025" placeholder="{...}" />
             <marker date="1453022715000" expanded="true" signature="1025:1106" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.travis.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="12" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/services/math-service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6976744">
+          <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+          <folding>
+            <marker date="1453023151000" expanded="true" signature="64:374" placeholder="{...}" />
           </folding>
         </state>
       </provider>
