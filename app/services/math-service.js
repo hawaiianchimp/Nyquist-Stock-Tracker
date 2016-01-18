@@ -1,8 +1,6 @@
 import Ember from 'ember';
 
 export default Ember.Service.extend({
-  inputService: Ember.inject.service(),
-
   /**
    * Calculates the moving average of an array of values
    *
@@ -20,6 +18,27 @@ export default Ember.Service.extend({
     return data.splice(-limit).reduce((prev, curr, index, values) => {
       return prev + curr/values.length;
     }, 0);
+  },
+
+  smaLine(data, limit = data.length) {
+    Ember.assert('Limit must be an Integer', typeof limit === 'number');
+    Ember.assert('Data must be an Array', data.constructor === Array);
+
+    if (limit <= 0 || data.length === 0) {
+      return [];
+    } else if (limit > data.length){
+      limit = data.length;
+    }
+
+    let values = [];
+    for(let i = data.length; i > 0; i--){
+      let subtotal = 0;
+      for(let j = limit; j > 0 && ((i - j) >= 0); j--){
+        subtotal += data[i - j];
+      }
+      values.unshift(Math.round(subtotal/limit * 100) / 100);
+    }
+    return values;
   },
 
   /**
@@ -85,6 +104,14 @@ export default Ember.Service.extend({
 
     return Math.round(100 - 100/(1 + rs));
   },
+  //
+  //macd(data, limit = data.length){
+  //  return this.ema(data, 26) - this.ema(data, 12);
+  //},
+  //
+  //signalLine(data, limit = data.length){
+  //  return this.ema(data, 9);
+  //},
 
   /**
    * Rounds number to the specified number of digits

@@ -10,22 +10,41 @@ moduleFor('service:math-service', 'Unit | Service | math service', {
 	}
 });
 
+test('Simple Moving Average Line', function(assert) {
+	assert.expect(15);
+	assert.equal(service.smaLine([1,10,1], 0).toString(), [].toString(), 'testing zero days selected');
+	assert.equal(service.smaLine([], 3).toString(), [].toString(), 'testing empty array');
+	assert.equal(service.smaLine([1,1,1], 3).toString(), [0,0,1].toString(), 'testing days equal to array.length');
+	assert.equal(service.smaLine([1,1,1], 2).toString(), [0,1,1].toString(), 'testing days less than array.length');
+	assert.equal(service.smaLine([1,1,1], 4).toString(), [0,0,1].toString(), 'testing days greating than array.length');
+	assert.equal(service.smaLine([2,5,2], 3).toString(), [0,0,3].toString(), 'testing different numbers');
+  assert.equal(service.smaLine([2,5,2]).toString(), [0,0,3].toString(), 'testing optional limit');
+	assert.equal(service.smaLine([2,4,7,4], 3).toString(), [0,0,4.33, 5].toString(), 'testing larger arrays');
+	assert.equal(service.smaLine([2,4,728,4,10,2,6], 5).toString(), [0,0,0,0,149.6,149.6,150].toString(), 'testing larger inputs');
+	assert.equal(service.smaLine([1,2,3,4,5], 200).toString(), [0,0,0,0,3].toString(), 'testing large days selection');
+  assert.equal(service.smaLine([1,2,3,4,5], 2).toString(), [0,1.5,2.5,3.5,4.5].toString(), 'testing large days selection');
+  assert.equal(service.smaLine([1,2,3,4,5], 10.9).toString(), [0,0,0,0,3].toString(), 'Function does not break on decimal limit');
+	assert.equal(service.smaLine([1,2,3,4,6,2,63,5], 3).toString(), [0,0,2,3,4.33,4,23.67,23.33].toString(), 'testing decimal output');
+	assert.equal(service.smaLine([1.45,2.25,3.12,4.76,6.2,2.3,63.9,5.6], 5).toString(), [0,0,0,0,3.56,3.73,16.06,16.55].toString(), 'testing decimal input');
+	assert.equal(service.smaLine([4,5,2], 3).toString(), [0,0,3.67].toString(), 'testing rounding of repeating decimal output');
+});
+
 test('Simple Moving Average', function(assert) {
-	assert.expect(14);
-	assert.equal(service.sma([1,10,1], 0), 0, 'testing zero days selected');
-	assert.equal(service.sma([], 3), 0, 'testing empty array');
-	assert.equal(service.sma([1,1,1], 3), 1, 'testing days equal to array.length');
-	assert.equal(service.sma([1,1,1], 2), 1, 'testing days less than array.length');
-	assert.equal(service.sma([1,1,1], 4), 1, 'testing days greating than array.length');
-	assert.equal(service.sma([2,5,2], 3), 3, 'testing different numbers');
-  assert.equal(service.sma([2,5,2], 3), 3, 'testing optional limit');
-	assert.equal(service.sma([2,4,7,4], 3), 5, 'testing larger arrays');
-	assert.equal(service.sma([2,4,728,4,10,2,6], 5), 150, 'testing larger inputs');
-	assert.equal(service.sma([1,2,3,4,5], 200), 3, 'testing large days selection');
+  assert.expect(14);
+  assert.equal(service.sma([1,10,1], 0), 0, 'testing zero days selected');
+  assert.equal(service.sma([], 3), 0, 'testing empty array');
+  assert.equal(service.sma([1,1,1], 3), 1, 'testing days equal to array.length');
+  assert.equal(service.sma([1,1,1], 2), 1, 'testing days less than array.length');
+  assert.equal(service.sma([1,1,1], 4), 1, 'testing days greating than array.length');
+  assert.equal(service.sma([2,5,2], 3), 3, 'testing different numbers');
+  assert.equal(service.sma([2,5,2]), 3, 'testing optional limit');
+  assert.equal(service.sma([2,4,7,4], 3), 5, 'testing larger arrays');
+  assert.equal(service.sma([2,4,728,4,10,2,6], 5), 150, 'testing larger inputs');
+  assert.equal(service.sma([1,2,3,4,5], 200), 3, 'testing large days selection');
   assert.equal(service.sma([1,2,3,4,5], 10.9), 3, 'Function does not break on decimal limit');
-	assert.equal(service.sma([1,2,3,4,6,2,63,5], 200), 10.75, 'testing decimal output');
-	assert.equal(service.sma([1.45,2.25,3.12,4.76,6.2,2.3,63.9,5.6], 200), 11.1975, 'testing decimal input');
-	assert.equal(service.sma([4,5,2], 3), (4 + 5 + 2) / (3), 'testing rounding of repeating decimal output');
+  assert.equal(service.sma([1,2,3,4,6,2,63,5], 200), 10.75, 'testing decimal output');
+  assert.equal(service.sma([1.45,2.25,3.12,4.76,6.2,2.3,63.9,5.6], 200), 11.1975, 'testing decimal input');
+  assert.equal(service.sma([4,5,2], 3), (4 + 5 + 2) / (3), 'testing rounding of repeating decimal output');
 });
 
 test('Exponential Moving Average', function(assert) {
