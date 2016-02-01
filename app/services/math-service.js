@@ -67,6 +67,31 @@ export default Ember.Service.extend({
   },
 
   /**
+   * Recursive function to calculate Exponential Moving Average
+   *
+   * @param {Array} data [The data]
+   * @param {Number} limit [The number of data points to calculate over]
+   * @returns {Number} [The exponential moving average]
+   */
+  emaLine(data, limit = data.length) {
+    Ember.assert('Limit must be an Integer', typeof limit === 'number');
+    Ember.assert('Data must be an Array', data.constructor === Array);
+
+    if (limit <= 0 || data.length === 0) {
+      return [];
+    } else if (limit > data.length){
+      limit = data.length;
+    }
+
+    let values = [];
+    for(let i = data.length; i > 0; i--){
+      let subdata = data.slice(i - limit, i);
+      values.unshift(this.ema(subdata, limit));
+    }
+    return values;
+  },
+
+  /**
    * Function to calculate Relative Strength Index
    *
    * @param {Array} data [The data]
@@ -132,6 +157,6 @@ export default Ember.Service.extend({
    * @returns {boolean}
    */
   isNumber(i) {
-    return !isNaN(i) && typeof i === "number";
+    return !isNaN(i) && typeof i === 'number';
   }
 });

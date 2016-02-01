@@ -6,8 +6,8 @@ moduleFor('service:input-service', 'Unit | Service | input', {
   // Specify the other units that are required for this test.
   //needs: ['service:input']
   beforeEach() {
-  service = this.subject();
-}
+    service = this.subject();
+  }
 });
 
 test('convert text to array', function(assert) {

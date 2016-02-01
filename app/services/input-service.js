@@ -16,14 +16,11 @@ export default Ember.Service.extend({
     if(Ember.isEmpty(text)){
       return [];
     }
-    if(Ember.isArray(text)){
-      return text;
-    }
-    if(typeof text === 'string'){
-      if(text.indexOf(',') > -1){
+    if(typeof text === 'string') {
+      if(text.indexOf(',') > -1) {
         return text.split(',')
             .map(i => parseFloat(i))
-      .filter(i => !isNaN(i) && typeof i === "number");
+      .filter(i => !isNaN(i) && typeof i === 'number');
       }
       else if(typeof parseFloat(text) === 'number'){
         return (isNaN(parseFloat(text))) ? []:[parseFloat(text)];
@@ -33,5 +30,19 @@ export default Ember.Service.extend({
       return [text];
     }
     return [];
+  },
+
+  /**
+   *
+   * Converts text to Integer
+   *
+   * @param  {String} text [number as text input]
+   * @return {Number}      [returns Integer]
+   */
+  convertToInteger: function(text){
+    if(!text){
+      return 0;
+    }
+    return parseInt(text);
   }
 });
