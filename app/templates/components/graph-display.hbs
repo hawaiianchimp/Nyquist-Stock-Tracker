@@ -9,23 +9,7 @@
 <tl>
 	<td>Exponential Moving Average:</td>
 	<td>{{exponentialMovingAverage}}</td>
-</tl>
 
-{{! time-series-chart
-        barData=[]
-        lineData=exponentialMovingAverage
-        selectedInterval=1
-        selectedSeedColor=selectedSeedColor
-        barPadding=10
-        barGroupPadding=10
-        barLeftOffset=0
-        maxNumberOfLabels=10
-        yAxisFromZero=false
-        dynamicXAxis=false
-        hasXAxisTitle=true
-        hasYAxisTitle=true
-        xValueDisplayName=1
-        yValueDisplayName=1
-        xTitleHorizontalOffset=1
-        yTitleVerticalOffset=1
-      }}
+	{{line-chart data=model options=options}}
+
+</tl>
