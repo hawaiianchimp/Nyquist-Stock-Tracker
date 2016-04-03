@@ -2,10 +2,8 @@ import Ember from 'ember';
 import ApplicationAdapter from './application';
 
 export default ApplicationAdapter.extend({
-  host: 'http://www.quandl.com',
-  namespace: 'v1/datasets/WIKI',
   buildURL(modelName, id, snapshot, requestType, query){
-    return `https://www.quandl.com/api/v1/datasets/WIKI/${query.company}.json?column=4&sort_order=asc&collapse=quarterly&trim_start=2012-01-01&trim_end=2013-12-31`;
+    return `${this.get('host')}/${this.get('namespace')}/${id}.json?auth_token=${this.get('auth_token')}`;
   },
   pathForType(type) {
     return Ember.String.underscore(type);

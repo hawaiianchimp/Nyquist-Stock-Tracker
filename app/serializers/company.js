@@ -2,15 +2,18 @@ import DS from 'ember-data';
 
 export default DS.JSONAPISerializer.extend({
   normalizeFindRecordResponse(store, primaryModelClass, payload, id, requestType) {
-    let data = payload.dataset;
-    debugger;
+    let dataset = payload.dataset;
+    let prices = dataset.data.slice(0,20);
+    prices.unshift(dataset.column_names);
+
     return {
       data: {
-        id: data.dataset_code,
+        id: id,
         type: primaryModelClass.modelName,
         attributes: {
-          name: data.name,
-          ticker: data.dataset_code
+          name: dataset.name,
+          ticker: dataset.dataset_code,
+          prices: prices
         }
       }
     };
