@@ -46,6 +46,6 @@
     "mongoose": "^5.8.3"
   },
   "dependencies": {
-    "mongodb": "^2.1.7"
+    "mongodb": "^3.6.1"
   }
 }
